@@ -1,0 +1,63 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Главная</title>
+    
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+    <style type="text/tailwindcss">
+        @tailwind base;
+        @tailwind components;
+        @tailwind utilities;
+        
+        @layer components {
+            .btn-primary {
+                @apply flex items-center justify-center rounded-md border border-transparent bg-indigo-600 px-8 py-3 text-base font-medium text-white no-underline hover:bg-indigo-700 md:py-4 md:px-10 md:text-lg;
+            }
+            .btn-default {
+                @apply flex items-center justify-center rounded-md border border-transparent bg-indigo-100 px-8 py-3 text-base font-medium text-indigo-700 no-underline hover:bg-indigo-200 md:py-4 md:px-10 md:text-lg;
+            }
+            .top-menu-item {
+                @apply flex items-center justify-center rounded-full bg-red-500 hover:bg-red-200 text-white font-medium px-4 py-2;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header class="container mx-auto">
+        <div class="flex justify-between pt-5">
+            <span class="font-bold text-3xl">Zegna</span>
+            <div class="flex justify-end space-x-5">
+                <a href="index.html" class="top-menu-item">Главная</a>
+                <a href="post.html" class="top-menu-item">Пост</a>
+                <a href="page.html" class="top-menu-item">Страница</a>
+            </div>
+        </div>
+    </header>
+    
+    <div class="mt-8 mx-auto text-center">
+        <h1 class="text-5xl text-slate-500">Главная</h1>
+    </div>
+
+    <div class="mt-5 sm:my-8 flex justify-center">
+        <a href="#" class="btn-primary">Кнопка</a>
+    </div>
+
+    <div class="flex flex-wrap justify-center space-x-10 pt-10">
+        <div class="top-menu-item">Button</div>
+        <div class="top-menu-item">Button</div>
+        <div class="top-menu-item">Button</div>
+        <div class="top-menu-item">Button</div>
+        <div class="top-menu-item">Button</div>
+    </div>
+
+    <div class="container mx-auto py-12 grid grid-columns-4 grid-flow-col gap-4">
+        <div class="bg-red-500 h-[100px]"></div>
+        <div class="bg-red-500 h-[100px]"></div>
+        <div class="bg-red-500 h-[100px]"></div>
+        <div class="bg-red-500 h-[100px]"></div>
+    </div>
+</body>
+</html>
